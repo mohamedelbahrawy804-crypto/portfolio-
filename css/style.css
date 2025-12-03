@@ -125,7 +125,7 @@ body:has(#contact:target) .nav__contact {
   display: none;
 }
 
-.header .container i {
+.header .container .logo {
   flex: 1;
   margin-left: 4rem;
   font-size: var(--font-size-38);
@@ -134,10 +134,9 @@ body:has(#contact:target) .nav__contact {
 .small-width {
   display: flex;
   align-items: center;
-  gap: 12rem;
+  gap: 8rem;
   padding: 1rem;
   transition: var(--main-transition);
-
 }
 
 .header nav ul {
@@ -209,6 +208,27 @@ body:has(#contact:target) .nav__contact {
 }
 
 /*end toggle*/
+/*arabic version*/
+.header .arabic_v {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.header .arabic_v .arabic__v-title {
+  line-height: 1px;
+}
+.header .arabic_v .arabic__v-title-anchor {
+  padding: 1rem;
+  padding-left: 0rem;
+  color: var(--color-dark-blue);
+  border: 0px solid #777;
+  border-radius: 3rem;
+  transition: 0.1s;
+  font-weight: var(--font-weight-medium);
+}
+.header .arabic_v .arabic__v-title-anchor:hover {
+  color: var(--color-darker-blue);
+}
 /* bio */
 .bio {
   height: calc(100vh - 85.89px);
@@ -935,7 +955,8 @@ html:has(.checkbox:checked) {
   .small-width {
     position: absolute;
     z-index: -1;
-        padding: 1rem;
+    gap: 1.5rem;
+    padding: 1rem;
     transition: var(--main-transition);
     width: 100%;
     background-color: #fff;
@@ -968,7 +989,12 @@ html:has(.checkbox:checked) {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 860px) {
+  .header .arabic_v {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
   .small-width {
     flex-direction: column;
     gap: 0;
@@ -979,7 +1005,7 @@ html:has(.checkbox:checked) {
     border-radius: 0 0 1rem 1rem;
     border-bottom: 1px solid black;
     box-shadow: 1px 1px 10px;
-    transform: translateY(-90px);
+    transform: translateY(-110px);
   }
 
   .header .small-width nav ul {
@@ -987,7 +1013,7 @@ html:has(.checkbox:checked) {
   }
 
   .header:has(.burger-menu__checkbox:checked) .small-width {
-    transform: translateY(190px);
+    transform: translateY(225px);
   }
 }
 
