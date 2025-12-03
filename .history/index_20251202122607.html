@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon_io/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>portfolio | Mohamed Elbahrawy</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <i class="fas fa-code"></i>
+        <nav>
+          <ul>
+            <li><a href="#">bio</a></li>
+            <li><a href="#">skills</a></li>
+            <li><a href="#">media</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">my clients</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">switch theme</h3>
+          <input
+            name="toggle checkbox"
+            id="toggle"
+            type="checkbox"
+            class="checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- bio section -->
+      <section id="bio" class="bio">
+        <div class="container">
+          <div class="content">
+            <article class="bio__data">
+              <h1 class="job_title">HI there, i'm a front-end developer</h1>
+              <p class="description">
+                my name is <strong>mohamed elbahrawy</strong> , a front in
+                developer and student at <a href="#">almadrasa</a> site
+              </p>
+              <a href="#" class="sayHI">say hi</a>
+              <a href="#" class="cv" aria-label="download cv">
+                <span>click fo cv</span>
+                <i class="fas fa-mouse-pointer"></i>
+              </a>
+            </article>
+            <figure class="bio_pic">
+              <img src="img/mo-profile.png" alt="mohamed elbahrawy photo" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- end bio section -->
+      <!-- skills section -->
+      <section class="skills" id="skills">
+        <div class="container">
+          <header class="main__title section__header">
+            <h2>skills</h2>
+          </header>
+          <div class="Technologies">
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-html5"></i>
+              </figure>
+              <h3 class="heading">Html</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-css3-alt"></i>
+              </figure>
+              <h3 class="heading">CSS</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-js"></i>
+              </figure>
+              <h3 class="heading">JS</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-git-alt"></i>
+              </figure>
+              <h3 class="heading">Git</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-github"></i>
+              </figure>
+              <h3 class="heading">GitHub</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-react"></i>
+              </figure>
+              <h3 class="heading">React</h3>
+              <p class="experience">1year</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- end skills section -->
+      <!-- media section -->
+      <section class="media" id="media">
+        <div class="container">
+          <figure>
+            <video
+              class="media__video"
+              controls
+              autoplay
+              muted
+              loop
+              playsinline
+              webkit-playsinline
+              aria-label="coding video"
+            >
+              <source src="video/media-coding-video.mp4" type="video/ogg" />
+              <source src="video/media-coding-video.mp4" type="video/mp4" />
+              your browser does not support the video tag
+            </video>
+          </figure>
+        </div>
+      </section>
+      <!-- end media section -->
+      <!-- projects section -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <header class="projects__header section__header">
+            <h3 class="projects__title">
+              my featured <br />
+              projects
+            </h3>
+          </header>
+          <div class="content">
+            <article class="projects__item">
+              <figure class="projects__img">
+                <img
+                  class="projects__img-image"
+                  src="img/project section/project-one-fitnessproject.png"
+                  alt="fitness page photo"
+                  aria-label="fitness page photo"
+                />
+              </figure>
+              <div class="projects__content">
+                <header class="projects__content-header">
+                  <h4 class="projects__content-header-text">fitness page</h4>
+                </header>
+                <div class="projects__text">
+                  <p class="projects__text-txt">
+                    Luxury gym template: Membership tiers, class schedules,
+                    trainer profiles, and advanced sign-up form validation.
+                  </p>
+                  <p class="projects__text-link">
+                    for live demo
+                    <a
+                      class="projects__text-link-anchor"
+                      href="https://mohamedelbahrawy804-crypto.github.io/Nti-Task-fitness/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >click here
+                      <span> <i class="fas fa-external-link-alt"></i> </span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="projects__item">
+              <div class="projects__content">
+                <header class="projects__content-header">
+                  <h4 class="projects__content-header-text">fitness page</h4>
+                </header>
+                <div class="projects__text">
+                  <p class="projects__text-txt">
+                    Luxury gym template: Membership tiers, class schedules,
+                    trainer profiles, and advanced sign-up form validation.
+                  </p>
+                  <p class="projects__text-link">
+                    for live demo
+                    <a
+                      class="projects__text-link-anchor"
+                      href="https://mohamedelbahrawy804-crypto.github.io/Nti-Task-fitness/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      click here
+                      <span> <i class="fas fa-external-link-alt"></i> </span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <figure class="projects__img">
+                <img
+                  class="projects__img-image"
+                  src="img/project section/project-one-fitnessproject.png"
+                  alt="fitness page photo"
+                  aria-label="fitness page photo"
+                />
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- end projects section -->
+      <!-- my clients says section -->
+      <section class="clients" id="clients">
+        <div class="container">
+          <header class="clients__header section__header">
+            <h3 class="clients__title">
+              what my<br />
+              clients says
+            </h3>
+          </header>
+          <article class="clients__content">
+            <div class="clients__opinion">
+              <div class="clients__warping">
+                <p class="clients__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                  tempore neque omnis laborum! Voluptatibus accusamus quibusdam
+                  doloribus quisquam, obcaecati, iusto cupiditate sequi eum
+                  repellat officia culpa soluta, voluptatem exercitationem
+                  eveniet!
+                </p>
+                <p class="clients__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                  tempore neque omnis laborum! Voluptatibus accusamus quibusdam
+                  doloribus quisquam, obcaecati, iusto cupiditate sequi eum
+                  repellat officia culpa soluta, voluptatem exercitationem
+                  eveniet! Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Porro explicabo velit
+                </p>
+                <p class="clients__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                  tempore neque omnis laborum! Voluptatibus accusamus quibusdam
+                  doloribus quisquam, obcaecati, iusto cupiditate sequi eum
+                  repellat officia culpa soluta, voluptatem exercitationem
+                  eveniet!
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- end clients says section -->
+      <!-- start contact section -->
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <header class="contact__header section__header">
+            <h3 class="contact__title">contact</h3>
+          </header>
+          <div class="content">
+          <article>
+            <div class="contact__text">
+              <p class="contact__text-txt">
+                fell free ro reach out to me any time, i prefer to talk ofer
+                email, especially since we may be a few time zones away.
+              </p>
+              <p class="contact__text-link">
+                for massage me<a
+                  href="mailto:mohamedelbahrawy804@gamil.com"
+                  class="contact__text-link-anchr"
+                >
+                  click here
+                  <i class="fas fa-paper-plane"></i>
+                </a>
+              </p>
+              <div class="contact__text-icon">
+                <ul class="icon__list">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/yourprofile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/yourprofile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com/yourprofile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:example@email.com">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <figure class="content__form"></figure>
+          </article>
+          <article class="contact__form">
+            <header class="contact__form-header section__header">
+              <h3 class="contact__form-title">
+                let's work <br> together!
+              </h3>
+            </header>
+            <form action="results.html">
+              <input type="text" placeholder="your name">
+              <input type="number" name="" id="" placeholder="you number">
+              <textarea  name="" id=""></textarea>
+            </form>
+          </article>
+          </div>
+        </div>
+      </section>
+      <!-- end contact section -->
+    </main>
+  </body>
+</html>

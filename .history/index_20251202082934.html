@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon_io/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>portfolio | Mohamed Elbahrawy</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <i class="fas fa-code"></i>
+        <nav>
+          <ul>
+            <li><a href="#">bio</a></li>
+            <li><a href="#">skills</a></li>
+            <li><a href="#">media</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">my clients</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">switch theme</h3>
+          <input
+            name="toggle checkbox"
+            id="toggle"
+            type="checkbox"
+            class="checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- bio section -->
+      <section id="bio" class="bio">
+        <div class="container">
+          <div class="content">
+            <article class="bio__data">
+              <h1 class="job_title">HI there, i'm a front-end developer</h1>
+              <p class="description">
+                my name is <strong>mohamed elbahrawy</strong> , a front in
+                developer and student at <a href="#">almadrasa</a> site
+              </p>
+              <a href="#" class="sayHI">say hi</a>
+              <a href="#" class="cv" aria-label="download cv">
+                <span>click fo cv</span>
+                <i class="fas fa-mouse-pointer"></i>
+              </a>
+            </article>
+            <figure class="bio_pic">
+              <img src="img/mo-profile.png" alt="mohamed elbahrawy photo" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- end bio section -->
+      <!-- skills section -->
+      <section class="skills" id="skills">
+        <div class="container">
+          <header class="main__title">
+            <h2>skills</h2>
+          </header>
+          <div class="Technologies">
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-html5"></i>
+              </figure>
+              <h3 class="heading">Html</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-css3-alt"></i>
+              </figure>
+              <h3 class="heading">CSS</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-js"></i>
+              </figure>
+              <h3 class="heading">JS</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-git-alt"></i>
+              </figure>
+              <h3 class="heading">Git</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-github"></i>
+              </figure>
+              <h3 class="heading">GitHub</h3>
+              <p class="experience">1year</p>
+            </article>
+            <article class="card">
+              <figure class="tech__icon">
+                <i class="fab fa-react"></i>
+              </figure>
+              <h3 class="heading">React</h3>
+              <p class="experience">1year</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- end skills section -->
+      <!-- media section -->
+      <section class="media" id="media">
+        <div class="container">
+          <figure>
+            <video
+              class="media__video"
+              controls
+              autoplay
+              muted
+              loop
+              playsinline
+              webkit-playsinline
+              aria-label="coding video"
+            >
+              <source src="video/media-coding-video.mp4" type="video/ogg" />
+              <source src="video/media-coding-video.mp4" type="video/mp4" />
+              your browser does not support the video tag
+            </video>
+          </figure>
+        </div>
+      </section>
+      <!-- end media section -->
+      <!-- projects section -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <header class="projects__header">
+            <h3 class="projects__title">
+              my featured <br />
+              projects
+            </h3>
+          </header>
+          <div class="content">
+            <article class="projects__item">
+              <figure class="projects__img">
+                <img
+                  class="projects__img-image"
+                  src="img/project section/project-one-fitnessproject.png"
+                  alt="fitness page photo"
+                  aria-label="fitness page photo"
+                />
+              </figure>
+              <div class="projects__content">
+                <header class="projects__content-header">
+                  <h4 class="projects__content-header-text">fitness page</h4>
+                </header>
+                <div class="projects__text">
+                  <p class="projects__text-txt">
+                    Luxury gym template: Membership tiers, class schedules,
+                    trainer profiles, and advanced sign-up form validation.
+                  </p>
+                  <p class="projects__text-link">
+                    for live demo
+                    <a
+                      class="projects__text-link-anchor"
+                      href="https://mohamedelbahrawy804-crypto.github.io/Nti-Task-fitness/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >click here
+                      <span> <i class="fas fa-external-link-alt"></i> </span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="projects__item">
+              <div class="projects__content">
+                <header class="projects__content-header">
+                  <h4 class="projects__content-header-text">fitness page</h4>
+                </header>
+                <div class="projects__text">
+                  <p class="projects__text-txt">
+                    Luxury gym template: Membership tiers, class schedules,
+                    trainer profiles, and advanced sign-up form validation.
+                  </p>
+                  <p class="projects__text-link">
+                    for live demo
+                    <a
+                      class="projects__text-link-anchor"
+                      href="https://mohamedelbahrawy804-crypto.github.io/Nti-Task-fitness/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      click here
+                      <span> <i class="fas fa-external-link-alt"></i> </span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <figure class="projects__img">
+                <img
+                  class="projects__img-image"
+                  src="img/project section/project-one-fitnessproject.png"
+                  alt="fitness page photo"
+                  aria-label="fitness page photo"
+                />
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- end projects section -->
+      <!-- my clients says section -->
+      <section class="clients" id="clients">
+        <header class="clients__header">
+          <h3 class="clients__title">
+            what my<br />
+            clients says
+          </h3>
+        </header>
+        <article class="clients__content">
+          <div class="clients__opinion">
+            <div class="clients__warping">
+              <p class="clients__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                tempore neque omnis laborum! Voluptatibus accusamus quibusdam
+                doloribus quisquam, obcaecati, iusto cupiditate sequi eum
+                repellat officia culpa soluta, voluptatem exercitationem
+                eveniet!
+              </p>
+              <p class="clients__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                tempore neque omnis laborum! Voluptatibus accusamus quibusdam
+                doloribus quisquam, obcaecati, iusto cupiditate sequi eum
+                repellat officia culpa soluta, voluptatem exercitationem
+                eveniet!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum consequatur minus repudiandae nam odio magnam saepe asperiores eos ad, suscipit excepturi numquam accusamus id. Eveniet soluta non deserunt exercitationem vero.
+                Cum, temporibus alias, officia cumque quaerat doloremque repudiandae ab ipsam consequuntur perspiciatis vero quod saepe explicabo fuga distinctio iste facere dicta, recusandae consectetur animi maxime nulla! Temporibus magnam laudantium voluptate!
+                Itaque quibusdam tempora, provident beatae placeat totam perspiciatis voluptatum quia voluptatibus distinctio fugit ea, assumenda possimus ducimus dolores tempore commodi debitis, eligendi consectetur incidunt repellendus. Possimus vel eum natus vitae.
+                Consequuntur veniam natus architecto? Facilis architecto fugiat, asperiores eveniet aspernatur optio, accusantium earum magni consequuntur eius debitis, adipisci possimus obcaecati ea! Ratione eius doloremque illo at. Accusantium quasi recusandae ex?
+                Dolor facere commodi enim fuga necessitatibus vel nisi. Tenetur, quibusdam veniam doloremque alias porro necessitatibus explicabo dolores dolor facilis aspernatur, labore architecto accusamus. Animi maiores aperiam corporis quos rem fugiat.
+                Id iste earum quasi saepe explicabo aperiam, veniam vitae sed labore nobis corrupti rem soluta libero obcaecati impedit voluptates cum porro iusto quae accusamus minus nesciunt non optio. Asperiores, consectetur.
+                Dignissimos laboriosam mollitia consequuntur quibusdam a veritatis omnis harum, modi quisquam minima dolores fuga odit illo accusamus ex labore quas libero sapiente quia? Ea laborum soluta quod, ab autem architecto.
+                Consequuntur quos vero aliquam, quas aspernatur voluptatem laborum qui obcaecati dolores ut quod sint, in necessitatibus esse magni earum impedit saepe perferendis rem excepturi ullam, facere culpa laudantium! Ipsam, magni?
+                Modi magnam non architecto sit delectus, sequi voluptatibus deserunt, amet natus rem, ducimus vitae ratione sed cum! Ducimus assumenda voluptatibus culpa adipisci expedita quibusdam ex, vero soluta nam velit modi.
+                Consequatur ad delectus tempore modi illum, quo quia amet nam dolorum. Amet mollitia reprehenderit qui dolore fugit est fuga hic. In harum impedit illum eligendi quam deserunt fuga voluptate sunt!
+                Similique temporibus suscipit eaque reiciendis omnis harum nulla enim. Alias, sapiente sunt. Ea ex ullam blanditiis, quod deleniti eveniet placeat aliquam nihil, perspiciatis fugit omnis esse quaerat unde? Nesciunt, corrupti.
+                Expedita ad quas suscipit neque asperiores hic eos pariatur laudantium, assumenda unde nesciunt error modi deserunt quos tempore quam laborum dolores labore corrupti? Ipsum possimus ab asperiores voluptate provident iusto?
+                Animi eaque ullam dolores culpa harum illo suscipit non beatae. Cum quam fugiat obcaecati et dolor aut consequuntur inventore ipsam nulla veniam vero dicta libero, labore fugit, modi eius! Aperiam?
+                Repellendus a id asperiores, consequuntur voluptatum neque quos magnam dolorum iure nam qui voluptatem totam cum! Sapiente facilis mollitia aperiam quisquam. Esse iusto, vel delectus alias maxime eius maiores ratione.
+                Officiis aperiam cum reprehenderit adipisci eius eaque, sed unde laborum quasi dolores nostrum. Consequuntur, deleniti. Assumenda minima ratione aliquid, itaque at maiores temporibus accusantium ipsum nihil unde, sint velit placeat?
+              </p>
+              <p class="clients__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                tempore neque omnis laborum! Voluptatibus accusamus quibusdam
+                doloribus quisquam, obcaecati, iusto cupiditate sequi eum
+                repellat officia culpa soluta, voluptatem exercitationem
+                eveniet!
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- end clients says section -->
+    </main>
+  </body>
+</html>
