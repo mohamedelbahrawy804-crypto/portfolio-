@@ -1,0 +1,156 @@
+.header {
+  padding: 3rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 120;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-input-border);
+  box-shadow: 1px 1px 10px #777;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body:has(#bio:target) .nav__bio,
+body:has(#skills:target) .nav__skills,
+body:has(#media:target) .nav__media,
+body:has(#projects:target) .nav__projects,
+body:has(#clients:target) .nav__clients,
+body:has(#contact:target) .nav__contact {
+  color: #007bff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+}
+
+.burger-menu__checkbox {
+  display: none;
+}
+
+.header .container .logo {
+  flex: 1;
+  margin-left: 4rem;
+  font-size: var(--font-size-38);
+}
+html[lang="ar"] .header .container .logo {
+  margin-right: 4rem;
+}
+
+.small-width {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 1rem;
+  transition: var(--main-transition);
+}
+
+.header nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+.header nav ul li {
+  padding: 0.6rem 1.2rem;
+}
+
+.header nav ul li:hover {
+  background-color: #fff;
+}
+
+.header nav ul li.a {
+  transition: var(--main-transition);
+}
+
+/*toggle*/
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toggle .toggle__title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-18);
+}
+
+.checkbox {
+  display: none;
+}
+
+.toggle__label {
+  display: block;
+  position: relative;
+  width: 4.5rem;
+  height: 2.5rem;
+  background-color: var(--color-black);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  padding: 0.3rem 0.4rem;
+  transition: var(--main-transition);
+}
+
+.toggle__label:after {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  transition: var(--main-transition);
+}
+
+.toggle__label:focus::after {
+  background-color: red;
+}
+
+.checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+
+.checkbox:checked + .toggle__label::after {
+  transform: translateX(2rem);
+  background-color: var(--color-black);
+}
+html[lang="ar"] .checkbox:checked + .toggle__label::after {
+  transform: translateX(-2rem);
+}
+/*burger icon*/
+.burger-container {
+  display: none;
+  /* hidden by default */
+  z-index: 130;
+}
+
+.burger-label {
+  display: block;
+  width: 3rem;
+  height: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.burger-label span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-black);
+  margin: 0.4rem 0;
+  transition: 0.4s;
+}
+
+/* transform burger to X */
+.burger-checkbox:checked + .burger-label span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-checkbox:checked + .burger-label span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-checkbox:checked + .burger-label span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}

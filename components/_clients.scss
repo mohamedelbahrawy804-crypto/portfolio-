@@ -1,0 +1,20 @@
+.clients .clients__content .clients__opinion {
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  box-shadow: 1px 0px 5px #7777773d;
+}
+
+.clients .clients__content .clients__opinion .clients__warping {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.clients .clients__content .clients__text {
+  font-size: var(--font-size-24);
+  color: #777;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}

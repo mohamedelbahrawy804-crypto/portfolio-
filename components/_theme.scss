@@ -1,0 +1,53 @@
+html:has(.checkbox:checked) {
+  body {
+    background-color: var(--color-black);
+  }
+
+  .BackToTop {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  .header {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  /*for burder burger menu and the menu*/
+  .header .container,
+  .small-width {
+    background-color: var(--color-black);
+  }
+
+  .burger-menu__bar {
+    background-color: var(--color-white);
+  }
+
+  .header nav ul li:hover {
+    background-color: var(--color-grey);
+  }
+
+  .bio .bio_pic::after {
+    background-color: var(--color-grey);
+  }
+
+  .bio .container .content .bio__data,
+    footer .content
+
+    /*for text color in fotter*/ {
+    color: var(--color-white);
+  }
+
+  .black-mode {
+    background-color: #1e1e1e;
+    color: var(--color-white);
+  }
+
+  /*skills what my clients says section , contact section*/
+  .skills .Technologies .card,
+    /*for cards*/
+    .clients .clients__content .clients__opinion,
+    .contact .content {
+    background-color: var(--color-black);
+  }
+}

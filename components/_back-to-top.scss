@@ -1,0 +1,15 @@
+.BackToTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 3.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}

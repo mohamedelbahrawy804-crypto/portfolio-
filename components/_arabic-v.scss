@@ -1,0 +1,24 @@
+/*arabic version*/
+.header .arabic_v {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.header .arabic_v .arabic__v-title {
+  line-height: 1px;
+}
+
+.header .arabic_v .arabic__v-title-anchor {
+  padding: 1rem;
+  padding-left: 0rem;
+  color: var(--color-dark-blue);
+  border: 0px solid #777;
+  border-radius: 3rem;
+  transition: 0.1s;
+  font-weight: var(--font-weight-medium);
+}
+
+.header .arabic_v .arabic__v-title-anchor:hover {
+  color: var(--color-darker-blue);
+}

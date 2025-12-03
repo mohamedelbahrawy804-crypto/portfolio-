@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+body:lang(ar) {
+  font-family: "Tajawal", sans-serif;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+}
+.section__header {
+  font-size: var(--font-size-65);
+  margin: 2rem 0;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
