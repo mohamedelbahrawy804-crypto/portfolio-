@@ -73,12 +73,32 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 11rem;
 }
-
+body:lang(ar) {
+  font-family: "Tajawal", sans-serif;
+}
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 1.6rem;
+  .checkbox:checked+.toggle__label::after {
+      transform: translateX(2rem);
+    }
 }
-
+/*back to top*/
+.BackToTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: 3.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
 .section__header {
   font-size: var(--font-size-65);
   margin: 2rem 0;
@@ -206,7 +226,9 @@ body:has(#contact:target) .nav__contact {
   transform: translateX(2rem);
   background-color: var(--color-black);
 }
-
+html[lang="ar"] .checkbox:checked + .toggle__label::after {
+  transform: translateX(-2rem);
+}
 /*end toggle*/
 /*arabic version*/
 .header .arabic_v {
@@ -692,7 +714,11 @@ body:has(#contact:target) .nav__contact {
 .contact .content > * {
   flex: 1;
 }
-
+.contact .contact__form {
+  background-image: linear-gradient(88deg, #777 -210%, transparent);
+  padding: 0.7rem;
+  border-radius: inherit;
+}
 .contact .content .contact__text {
   min-width: 412px;
   text-transform: capitalize;
@@ -807,7 +833,10 @@ html:has(.checkbox:checked) {
   body {
     background-color: var(--color-black);
   }
-
+  .BackToTop {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
   .header {
     background-color: var(--color-black);
     color: var(--color-white);
@@ -1037,5 +1066,10 @@ html:has(.checkbox:checked) {
 
   .projects .projects__item .projects__img {
     padding: 1rem;
+  }
+}
+@media (max-width: 728px) {
+  .contact .contact__form {
+    background-image: linear-gradient(4deg, #777 -210%, transparent);
   }
 }
