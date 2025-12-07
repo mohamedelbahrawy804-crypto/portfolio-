@@ -9,7 +9,7 @@ Hi there! This repository holds the source code for my personal portfolio websit
 ### 🔗 Quick Links
 
 * **Live Portfolio:** [https://mohamedelbahrawy804-crypto.github.io/portfolio-/](https://mohamedelbahrawy804-crypto.github.io/portfolio-/)
-* **Contact Me (LinkedIn):** [Your LinkedIn Profile Link]
+
 
 ---
 
